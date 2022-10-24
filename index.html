@@ -1,53 +1,120 @@
-<html>
-    <head>
-        <style>
-        .nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
-        
-        .nav li {
-          float: left;
-        }
-        
-        .nav li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .nav li a:hover {
-          background-color: #111;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="nav">        
-            <ul>
-            <li><a href="#">Biodata</a></li>
-            <li><a href="Portofolio.html">Portofolio</a></li>
-        </ul>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latihan Framework</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder text-dark" aria-current="page" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder text-dark" aria-current="page" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bolder text-dark" aria-current="page" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- hero -->
+      <div id="hero" class="container d-flex flex-column align-items-center justify-content-center">
+        <img src="./Assets/Img/Ahmad Nur Alamsyah_Administrator Web.png" class="image-hero rounded-circle" alt="">
+        <h1 class="title fw-bold">Ahmad Nur Alamsyah</h1>
+        <p class="subtitle">Mahasiswa</p>
+        <i class="bi bi-arrow-down"></i>
+      </div>
+      <!--about me-->
+      <div id="about" class="container">
+        <h2 class="text-center mb-3">About Me</h2>
+        <div class="row">
+          <div class="col-6">
+            <img src="./Assets/Img/WhatsApp Image 2022-10-24 at 15.24.22.jpeg" class=" image-kedua shadow rounded w-100 mb-3">
+          </div>
+          <div class="col-6">
+            <p class="text-about text-secondary lh-lg">Saya adalah mahasiswa Administrasi Publik dari Universitas Negeri Yogyakarta. 
+              Saya berasal dari Kota Yogyakarta. 
+              Saat ini saya sudah menempuh semester 5 di UNY. 
+              Saya aktif di berbagai UKM kampus seperti UKM penelitian dan Lembaga Pers Mahasiswa.</p>
+              <a href="Portofolio.html">Klik selengkapnya untuk melihat portofolio saya</a>
+          </div>
+        </div>
+      </div>
+      <!--Skill-->
+      <div id="skill" class="container">
+        <h2 class="text-center mb-3">My Skill</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <img src="./Assets/Img/How-to-Avoid-3-Classic-Photo-Mistakes.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Fotografi</h5>
+                <p class="card-text">Memiliki hobi fotografi, sehingga sedikit bisa fotografi</p>
+                <a href="https://www.instagram.com/p/CHuN_IoBteb/?igshid=YmMyMTA2M2Y=" class="btn btn-primary w-100">Mari Lihat Foto Saya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <img src="./Assets/Img/writing-skills-1080x628.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Writing</h5>
+                <p class="card-text">Memiliki beberapa keterampilan dalam menulis, terutama menulis karya ilmiah</p>
+                <a href="https://www.philosofisonline.id/2021/11/hmap-himpunan-mahasiswa-anak-pengamen.html" class="btn btn-primary w-100">Mari Baca Tulisan Saya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Contact Me-->
+      <div id="contact" class="container">
+        <h2 class="text-center mb-3">Contact Me</h2>
+        <form class="col-6 mx-auto">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+      <!--Footer-->
+      <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
     </div>
 
-        <H1><bold>Ahmad Nur Alamsyah</bold></H1>
-        <img src="Ahmad Nur Alamsyah_Administrator Web.png" width="240" height="320" /></a></div><br />
-        <h2><b>Tentang Saya</b></h2>
-        <p><span style="text-align: justify; font-family: Times New Roman; font-size: medium;">
-        Saya adalah mahasiswa Administrasi Publik dari Universitas Negeri Yogyakarta. Saya berasal dari Kota Yogyakarta. Saat ini saya sudah menempuh semester 5 di UNY. Saya aktif di berbagai UKM kampus seperti UKM penelitian dan Lembaga Pers Mahasiswa.</span></p>
-        <h2><bold>Keahlian Saya</bold></h2>
-        <ol>
-            <li>Fotografi</li>
-            <li>Writing</li>
-        </ol>
-        <h2><b>Riwayat Pendidikan</b></h2>
-        <ul style="color:green ;"><li>2014-2017 SMP 16 Yk</li><li>2017-2020 SMA 7 Yk</li><li>2020-sekarang UNY</li></ul>
-        <h3>Kunjungi Sosial Media Saya</h3>
-        <p><a style= "color:red;" href="https://instagram.com/ahmadalamsyah965?igshid=YmMyMTA2M2Y=" target="_blank">ahmadalamsyah965</a></p>
-        <p><span style="font-size: large; "><b>Salam Kenal</b></span></p>
-    </body>
-</html> 
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a href="https://twitter.com/justrick_6/status/1559587717746270209?s=20&t=VHqciZqT_FoTrpcN2NeP7A" class="text-muted" href="#"><i class="bi bi-twitter"></i></use></svg></a></li>
+      <li class="ms-3"><a href="https://www.instagram.com/reel/CWE_2CgpGHa/?igshid=YmMyMTA2M2Y=" class="text-muted" href="#"><i class="bi bi-instagram"></i></use></svg></a></li>
+      <li class="ms-3"><a href="https://www.facebook.com/moustache.jean/videos/356186394381/?idorvanity=355204247163" class="text-muted" href="#"><i class="bi bi-facebook"></i></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
